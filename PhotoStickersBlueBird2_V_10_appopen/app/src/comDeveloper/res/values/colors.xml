@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="privacyPolicyTextColor">#000000</color>
+
+    <color name="nativeStickersBgdColor">#f5f6fa</color>
+    <color name="nativeStickersTitleColor">#000000</color>
+    <color name="nativeStickersCtaTextColor">#FFFFFF</color>
+    <color name="nativeStickersCtaStrokeColor">#69b73f</color>
+    <color name="nativeStickersCtaBgdColor">#4fa12a</color>
+
+    <color name="nativeGalleryBgdColor">#000000</color>
+    <color name="nativeGalleryTitleColor">#F5AE1C</color>
+    <color name="nativeGalleryCtaTextColor">#FFFFFF</color>
+    <color name="nativeGalleryCtaBgdColor">#70B846</color>
+    <color name="nativeGalleryCtaStrokeColor">#599B3A</color>
+
+    <color name="nativeHomeBgdColor">#f5f6fa</color>
+    <color name="nativeHomeTitleColor">#000000</color>
+    <color name="nativeHomeCtaTextColor">#FFFFFF</color>
+    <color name="nativeHomeCtaBgdColor">#69b73f</color>
+    <color name="nativeHomeCtaStrokeColor">#4fa12a</color>
+
+    <color name="loading_bg_start">#000000</color>
+    <color name="loading_bg_center">#000000</color>
+    <color name="loading_bg_end">#000000</color>
+
+    <color name="loading_progress_start">#ff26ce61</color>
+    <color name="loading_progress_center">#ff26ce61</color>
+    <color name="loading_progress_end">#ff26ce61</color>
+
+    <color name="loading_loading_text">#ffffff</color>
+    <color name="loading_progress_text">#ffffff</color>
+
+</resources>

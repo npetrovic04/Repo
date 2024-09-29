@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:name="http://schemas.android.com/tools">
+
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="start_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="reward_id">0</string>
+<!--    <string name="unity_id">14851</string>-->
+<!--    <string name="unity_interstitial_id">video</string>-->
+
+    <string-array name="action_name">
+        <item>Back</item>
+    </string-array>
+
+    <string-array name="action_id">
+        <item>ca-app-pub-3940256099942544/1033173712</item>
+    </string-array>
+
+    <integer-array name="action_fire_rate">
+        <item>2</item>
+    </integer-array>
+
+
+    <integer name="start_frequency">50</integer>
+
+</resources>

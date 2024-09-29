@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Banner ads -->
+    <include layout="@layout/banner_ads"
+        android:id="@+id/banner_holder"/>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_below="@id/banner_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/centerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagePreview"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.photostickers.customComponents.StickerTextArea
+                android:id="@+id/stickerTextArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_face"/>
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_twitter"/>
+
+            <ImageView
+                android:id="@+id/insta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_insta"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:weightSum="4">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"/>
+
+                    <ImageView
+                        android:id="@+id/stickers"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/btn_troll"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:id="@+id/flip"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:src="@drawable/btn_flip"/>
+
+                    <ImageView
+                        android:id="@+id/text"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/btn_text"
+                        android:visibility="invisible"
+                        android:layout_weight="1"/>
+
+                    <ImageView
+                        android:id="@+id/toFront"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:visibility="invisible"
+                        android:src="@drawable/btn_front"/>
+
+                    <ImageView
+                        android:id="@+id/edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/btn_options"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:weightSum="4">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"/>
+
+                    <ImageView
+                        android:id="@+id/trash"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/animation_trash"
+                        android:layout_gravity="bottom"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="5dp"
+                    android:weightSum="4">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"/>
+
+                    <ImageView
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/btn_save"
+                        android:layout_gravity="bottom"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stickersGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#7f000000"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/tutorial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

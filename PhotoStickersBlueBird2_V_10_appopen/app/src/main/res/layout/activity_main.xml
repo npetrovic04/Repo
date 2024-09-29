@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Banner ads -->
+    <include layout="@layout/banner_ads"
+        android:id="@+id/banner_holder"/>
+
+    <RelativeLayout
+            android:id="@+id/container"
+            android:layout_below="@id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/topContainer"
+                android:background="@drawable/top"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <RelativeLayout
+                android:id="@+id/midContainer"
+                android:background="@drawable/mid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/native_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:visibility="invisible" />
+
+                <!-- Native ads -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/native_holder"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/bottomContainer"
+                    android:background="@drawable/bot"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10">
+                    </LinearLayout>
+
+                    <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="80">
+
+                        <include layout="@layout/gallery_camera_buttons_layout"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="10">
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/privacyPolicyTextView"
+                android:text="@string/privacyPolicyText"
+                android:textSize="@dimen/privacyPolicyTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

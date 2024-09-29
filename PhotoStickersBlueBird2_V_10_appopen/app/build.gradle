@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.name.replace('Release', '-release')}_GP_VC${variant.versionCode}_VN${variant.versionName.replace('.', '-')}.apk"
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    compileSdkVersion 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+        applicationId "com.Photo.Stickers"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    namespace 'com.photostickers'
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions 'product'
+
+    productFlavors
+            {
+                comDeveloper
+                        {
+                            applicationId "com.Developer"
+                            versionCode 1
+                            versionName "1.0"
+                        }
+                comVADHairstyleBeardSalon
+                        {
+                            applicationId "com.VAD.Hairstyle.Beard.Salon"
+                            versionCode 12
+                            versionName "1.11"
+                        }
+                comVADHairColorChangerPhotoCam
+                        {
+                            applicationId "com.VAD.Hair.Color.Changer.Photo.Cam"
+                            versionCode 15
+                            versionName "1.14"
+                        }
+                comVADFunnyFacesPhotoBooth
+                        {
+                            applicationId "com.VAD.Funny.Faces.Photo.Booth"
+                            versionCode 13
+                            versionName "1.12"
+                        }
+                comVADHairstyleAndMakeupPhotoSalon
+                        {
+                            applicationId "com.VAD.Hairstyle.And.Makeup.Photo.Salon"
+                            versionCode 25
+                            versionName "1.24"
+                        }
+            }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "androidx.core:core-ktx:1.13.1"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.browser:browser:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'com.google.android.gms:play-services-base:18.5.0'
+    implementation 'com.google.android.gms:play-services-ads:23.3.0'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+    implementation 'androidx.work:work-runtime-ktx:2.9.1'
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    implementation 'me.grantland:autofittextview:0.2.1'
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.lifecycle:lifecycle-process:2.8.5'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.5"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.8.5"
+}
+
+repositories {
+    mavenCentral()
+}

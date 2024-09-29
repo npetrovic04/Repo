@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Stickers for Pictures App</string>
+    <string name="privacyPolicyUrl"></string>
+
+    <bool name="background_music">false</bool>
+
+    <string name="ad_attribution">Ad</string>
+
+    <bool name="useFaceDetect">true</bool>
+    <string name="privacyPolicyText">Privacy Policy</string>
+
+    <string name="more_apps">Visit Developer Page for More Apps?</string>
+    <string name="albumName">Stickers for Pictures App Album</string>
+    <string name="moreAppsNalog">Top Trending Apps</string>
+    <string name="noNetwork">No network access</string>
+
+    <!--PORUKE-->
+    <string name="sticker_not_selected">Select sticker or text if you want to delete it</string>
+    <string name="sticker_not_selected_for_bringfront">Select sticker or text to bring to front</string>
+    <string name="sticker_not_selected_for_flip">Select sticker or text first</string>
+    <string name="no_stickers">You don\'t have any stickers or text on your photo</string>
+    <string name="black">Black</string>
+    <string name="white">White</string>
+
+    <string name="instagram_not_installed">Instagram application not installed</string>
+    <string name="twitter_not_installed">Twitter application not installed</string>
+    <string name="fb_not_installed">Facebook application not installed</string>
+
+    <string name="messageSaved">Image is saved in gallery</string>
+    <string name="recoqnitionFailed">Face recognition failed. Add stickers manually.</string>
+
+    <!--SHARE-->
+    <string name="message"></string>
+    <string name="title"></string>
+
+    <!--PERMISIONS-->
+    <string name="permission_denied">Permission denied</string>
+    <string name="goToSettings">Go To Settings</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="permission_storage_gallery">Storage permission is required to load your photos from the gallery.\n\nWould you like to allow this permission?\n</string>
+    <string name="permission_storage_gallery_settings">Storage permission is required to load your photos from the gallery.\n\nPlease find this permission in the application settings and allow it.\n
+    </string>
+    <string name="permission_storage_save">Storage permission is required for the application to perform this action.\n\nWould you like to allow this permission?\n</string>
+    <string name="permission_storage_save_settings">Storage permission is required for the application to perform this action.\n\nPlease find this permission in the application settings and allow it.\n</string>
+
+    <string name="permission_camera">Storage permission is required for the application to perform this action.\n\nWould you like to allow this permission?\n</string>
+    <string name="permission_camera_settings">Storage permission is required for the application to perform this action.\n\nPlease find this permission in the application settings and allow it.\n</string>
+
+</resources>

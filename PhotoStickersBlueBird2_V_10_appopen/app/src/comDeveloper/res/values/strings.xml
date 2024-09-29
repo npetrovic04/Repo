@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Stickers for Pictures App</string>
+    <string name="privacyPolicyUrl"></string>
+    <string name="more_apps">Visit Developer Page for More Apps?</string>
+    <string name="albumName">Stickers for Pictures App Album</string>
+    <string name="moreAppsNalog">Top Trending Apps</string>
+    <bool name="background_music">false</bool>
+
+</resources>

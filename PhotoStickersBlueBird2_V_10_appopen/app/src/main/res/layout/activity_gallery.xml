@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:id="@+id/root"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Banner ads -->
+    <include layout="@layout/banner_ads"
+        android:id="@+id/banner_holder"/>
+
+    <RelativeLayout
+            android:id="@+id/container"
+            android:layout_below="@id/banner_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.gallery.views.CustomPickPhotoView
+                android:id="@+id/gridGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:clipToPadding="false">
+        </com.gallery.views.CustomPickPhotoView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
